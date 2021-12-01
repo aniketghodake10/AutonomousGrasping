@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<robot name="ur5_camera" xmlns:xacro="http://ros.org/wiki/xacro">
+  
+  <xacro:include filename="$(find ur_description)/urdf/ur5_robot.urdf.xacro"/>
+  
+  <xacro:include filename="$(find ur5_gpd)/urdf/camera/camera_macro.urdf.xacro"/>
+  <xacro:kinect_camera parent_link="world" cam_py="-1.0" cam_pz="1.0" cam_op="-0.77" cam_oy="1.0"/>
+  
+</robot>
